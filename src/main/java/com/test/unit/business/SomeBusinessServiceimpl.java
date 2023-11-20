@@ -2,7 +2,7 @@ package com.test.unit.business;
 
 import com.test.unit.data.SomeDataService;
 
-public class SomeBusinessServiceimpl {
+public class SomeBusinessServiceImpl {
 
     private SomeDataService someDateService;
 

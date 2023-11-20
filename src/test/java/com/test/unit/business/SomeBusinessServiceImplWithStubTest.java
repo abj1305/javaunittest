@@ -32,7 +32,7 @@ public class SomeBusinessServiceImplWithStubTest {
 
     @Test
     public void calculateSum_basic() {
-        SomeBusinessServiceimpl impl = new SomeBusinessServiceimpl();
+        SomeBusinessServiceImpl impl = new SomeBusinessServiceImpl();
         SomeDataService someDataService = new SomeDataServiceImpl();
         impl.setSomeDataService(someDataService);
         int result = impl.calculateSumFromDataService();
@@ -42,7 +42,7 @@ public class SomeBusinessServiceImplWithStubTest {
 
     @Test
     public void calculateSum_empty() {
-        SomeBusinessServiceimpl impl = new SomeBusinessServiceimpl();
+        SomeBusinessServiceImpl impl = new SomeBusinessServiceImpl();
         SomeDataService someDataService = new SomeDataServiceEmptyImpl();
         impl.setSomeDataService(someDataService);
         int result = impl.calculateSumFromDataService();
@@ -52,7 +52,7 @@ public class SomeBusinessServiceImplWithStubTest {
 
     @Test
     public void calculateSum_oneElement() {
-        SomeBusinessServiceimpl impl = new SomeBusinessServiceimpl();
+        SomeBusinessServiceImpl impl = new SomeBusinessServiceImpl();
         SomeDataService someDataService = new SomeDataServiceOneElementImpl();
         impl.setSomeDataService(someDataService);
         int result = impl.calculateSumFromDataService();

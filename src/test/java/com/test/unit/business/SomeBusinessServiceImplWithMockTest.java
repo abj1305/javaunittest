@@ -16,7 +16,7 @@ import com.test.unit.data.SomeDataService;
 public class SomeBusinessServiceImplWithMockTest {
 
     @InjectMocks
-    SomeBusinessServiceimpl impl;
+    SomeBusinessServiceImpl impl;
 
     @Mock
     SomeDataService someDataService;

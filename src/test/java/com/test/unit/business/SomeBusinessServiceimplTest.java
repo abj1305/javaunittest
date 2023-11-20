@@ -7,7 +7,7 @@ public class SomeBusinessServiceimplTest {
 
     @Test
     public void calculateSum_basic() {
-        SomeBusinessServiceimpl impl = new SomeBusinessServiceimpl();
+        SomeBusinessServiceImpl impl = new SomeBusinessServiceImpl();
         int result = impl.calculateSum(new int[]{1, 2, 3});
         int expected = 6;
         Assertions.assertEquals(expected, result);
@@ -15,7 +15,7 @@ public class SomeBusinessServiceimplTest {
 
     @Test
     public void calculateSum_empty() {
-        SomeBusinessServiceimpl impl = new SomeBusinessServiceimpl();
+        SomeBusinessServiceImpl impl = new SomeBusinessServiceImpl();
         int result = impl.calculateSum(new int[]{});
         int expected = 0;
         Assertions.assertEquals(expected, result);
@@ -23,7 +23,7 @@ public class SomeBusinessServiceimplTest {
 
     @Test
     public void calculateSum_oneElement() {
-        SomeBusinessServiceimpl impl = new SomeBusinessServiceimpl();
+        SomeBusinessServiceImpl impl = new SomeBusinessServiceImpl();
         int anyInt = 10;
         int result = impl.calculateSum(new int[]{anyInt});
         int expected = anyInt;
